@@ -36,6 +36,7 @@ Router.prototype = {
                     scope.goToRoute(route.htmlName);
                 }
             }
+        } else {
             for (var i = 0, length = r.length; i < length; i++) {
                 var route =  r[i];
                 if(route.defaultRoute) {
@@ -53,7 +54,7 @@ Router.prototype = {
                     scope.rootElem.innerHTML = this.responseText;
                 }
             };
-            xhttp.open('GET', url);
+            xhttp.open('GET', url, true);
             xhttp.send();
         })(this);
     }
