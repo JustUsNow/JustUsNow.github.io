@@ -30,7 +30,6 @@ Router.prototype = {
     },
     hasChanged: function(scope, r) {
         if(window.location.hash.length > 0) {
-            console.log(r);
             for (var i = 0, length = r.length; i < length; i++) {
                 var route = r[i];
                 if(route.isActiveRoute(window.location.hash.substr(1))) {
