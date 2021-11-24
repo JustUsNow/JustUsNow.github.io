@@ -49,8 +49,8 @@ Router.prototype = {
             var url = 'pages/' + htmlName, 
                 xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function() {
-                console.log(this.readyState, ' ', this.status);
                 if(this.readyState === 4 && this.status === 200) {
+                    console.log('yes');
                     scope.rootElem.innerHTML = this.responceText;
                 }
             };
