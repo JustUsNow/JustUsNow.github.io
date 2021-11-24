@@ -51,7 +51,7 @@ Router.prototype = {
             xhttp.onreadystatechange = function() {
                 if(this.readyState === 4 && this.status === 200) {
                     console.log('yes');
-                    scope.rootElem.innerHTML = this.responceText;
+                    scope.rootElem.innerHTML = this.responseText;
                 }
             };
             xhttp.open('GET', url, true);
