@@ -5,7 +5,8 @@
         var router = new Router([
             new Route('home', 'home.html', true),
             new Route('about', 'about.html'),
-            new Route('intro', 'intro.html')
+            new Route('intro', 'intro.html'),
+            new Route('matrix', 'matrix.html')
         ]);
     }
     init();
