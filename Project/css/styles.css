@@ -25,7 +25,15 @@ body {
  }
 
  .matrix th {
-     padding: 0.5rem;
+    padding: 0.5rem;
+ }
+
+ .button-wrapper {
+    text-align: center;
+ }
+
+ .go-button {
+     display: inline-block;
  }
 
   /* Style the side navigation */
