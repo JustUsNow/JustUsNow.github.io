@@ -15,6 +15,18 @@ body {
     align-items: center;
 }
 
+.table-wrapper {
+    text-align: center;
+    padding: 1rem;
+}
+ .matrix {
+    font-size: 1.5rem; 
+    display: inline-block;
+ }
+
+ .matrix th {
+     padding: 0.5rem;
+ }
 
   /* Style the side navigation */
 .sidenav {
