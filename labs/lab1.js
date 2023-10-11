@@ -4,6 +4,7 @@ function lab1_add_crate() {
 
     var new_crate = document.createElement(tagName="div");
     new_crate.setAttribute("class", "lab1_crate");
+    new_crate.setAttribute("style", "display:inline-block;margin:0 5px 10px 5px;");
 
     var l_text = document.createElement(tagName='p');
     l_text.textContent += "Длина";

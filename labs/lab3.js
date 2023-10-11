@@ -2,7 +2,7 @@ function lab3_onClick_calculate() {
 
     var s_number = document.getElementById("lab3").getElementsByTagName("input")[0].value;
 
-    document.getElementById("lab3_answer").textContent = lab3_calculate(s_number);
+    document.getElementById("lab3_answer").textContent = lab3_calculate(String(Math.abs(Number(s_number))));
 }
 
 

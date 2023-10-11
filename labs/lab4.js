@@ -9,9 +9,9 @@ function lab4_onClick_remove() {
 function lab4_remove(string = "") {
 
     if (string.length % 2 == 0) {
-        return string.slice(0, string.length / 2 - 1) + string.slice(string.length / 2 + 1, string.length);
+        return string.slice(string.length / 2 - 1, string.length / 2 + 1);
     }    
     else {
-        return string.slice(0, Math.floor(string.length / 2)) + string.slice(Math.ceil(string.length / 2), string.length);
+        return string[Math.floor(string.length / 2)];
     }
 }
