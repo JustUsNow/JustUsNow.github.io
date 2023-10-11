@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Вариант 7</title>
+    <meta charset="utf-8">
+    <meta name='description' content='Лабораторные работы по дисцплине Web-программирование' />
+    <meta name='author' content='Stepnov Egor' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="lab" id="lab1">
+        <h1>Лабораторная работа №1</h1>
+        <p>Учитывая массив ящиков, создайте функцию, которая возвращает общий объем всех этих ящиков, объединенных вместе. Ящик представлен массивом из трех элементов: длины, ширины и высоты.</p>
+        <button id='lab1_add_crate' onclick="lab1_add_crate()">+</button>
+        <div id="lab1_crates">
+        </div>
+        <button id="lab1_calculate" onclick="lab1_onClick_calculate()">Посчитать</button>
+        <p id="lab1_answer"></p>
+    </div>
+    <div class="lab" id="lab2">
+        <h1>Лабораторная работа №2</h1>    
+        <p>Напишите функцию, которая принимает строку и прореживает ее (т.е. удаляет последнюю 1/10 символов). Если строка состоит из 21 символа, 1/10 символов будет равно 2,1 символа, поэтому функция удаляет 3 символа (округляем «вверх»)</p>
+        <p>Введите строку</p>
+        <input type="text" name="lab2_string">
+        <button id="lab2_shorten" onclick="lab2_onClick_shorten()">Укоротить</button>
+        <p id="lab2_answer"></p>
+    </div>
+    <div class="lab" id="lab3">
+        <h1>Лабораторная работа №3</h1>
+        <p>Для заданного числа верните разницу между максимальным и минимальным числами, которые могут быть образованы при перестановке цифр.</p>
+        <p>Введите число</p>
+        <input type="number" name="lab3_number">
+        <button id="lab3_calculate" onclick="lab3_onClick_calculate()">Посчитать</button>
+        <p id="lab3_answer"></p>
+    </div>
+    <div class="lab" id="lab4">
+        <h1>Лабораторная работа №4</h1>
+        <p>Создайте функцию, которая принимает строку и возвращает средний символ (символы). Если длина слова нечетная, верните средний символ. Если длина слова четная, вернуть два средних символа.</p>
+        <p>Введите строку</p>
+        <input type="text" name="lab4_string">
+        <button id="lab4_remove" onclick="lab4_onClick_remove()">Убрать</button>
+        <p id="lab4_answer"></p>
+    </div>
+    <div class="lab" id="lab5">
+        <h1>Лабораторная работа №5</h1>
+        <p>Создайте функцию, которая возвращает true, если данная строка имеет любое из следующих значений: только буквы и никакие числа, только цифры и никаких букв. Если строка содержит и числа, и буквы, или символы, не попадающие ни в одну категорию, верните false.</p>
+        <p>Введите строку</p>
+        <input type="text" name="lab5_string">
+        <button id="lab5_validate" onclick="lab5_onClick_validate()">Проверить</button>
+        <p id="lab5_answer"></p>
+    </div>
+    <div class="lab" id="lab6">
+        <h1>Лабораторная работа №6</h1>
+        <p>Для данной даты верните, сколько дней до следующего года. Дата будет в формате ММ / ДД / ГГГГ.</p>
+        <p>Введите дтау</p>
+        <input type="date" name="lab6_date">
+        <button id="lab6_calculate" onclick="lab6_onClick_calculate()">Посчитать</button>
+        <p id="lab6_answer"></p>
+    </div>
+    <div class="lab" id="lab7">
+        <h1>Лабораторная работа №7</h1>
+        <p>Создавайте функции для класса Calculator, которые могут делать следующее: складывать два числа, вычитать два числа, умножать два числа, делить два числа.</p>
+        <p>Введите числа и выберите операцию</p>
+        <input type="number" name="lab7_number1">
+        <label>*</label>
+        <input type="radio" name="lab7_operation" value="*">
+        <label>+</label>
+        <input type="radio" name="lab7_operation" value="+">
+        <label>-</label>
+        <input type="radio" name="lab7_operation" value="-">
+        <label>/</label>
+        <input type="radio" name="lab7_operation" value="/">
+        <input type="number" name="lab7_number2">
+        <button id="lab7_calculate" onclick="lab7_onClick_calculate()">Посчитать</button>
+        <p id="lab7_answer"></p>
+    </div>
+    <div class="lab" id="lab8">
+        <h1>Лабораторная работа №8</h1>
+        <p>Напишите программу для подсчета и отображения элементов раскрывающегося списка.</p>
+        <p>Создайте список</p>
+        <input type="text" name="lab8_string">
+        <button id='lab8_add_li' onclick="lab8_add_li()">+</button>
+        <p onclick="lab8_toggle_list()">Список:</p>
+        <div class="list_wrapper" id="lab8_list_wrapper">
+            <ul id="lab8_list">
+            </ul>
+        </div>
+        <p>Всего элементов списка</p>
+        <p id="lab8_total">0</p>
+    </div>
+
+    
+</body>
+
+<script src="lab1.js"></script>
+<script src="lab2.js"></script>
+<script src="lab3.js"></script>
+<script src="lab4.js"></script>
+<script src="lab5.js"></script>
+<script src="lab6.js"></script>
+<script src="lab7.js"></script>
+<script src="lab8.js"></script>
+
+</html>
