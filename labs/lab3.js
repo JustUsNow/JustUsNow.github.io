@@ -9,8 +9,13 @@ function lab3_onClick_calculate() {
 function lab3_calculate(s_number = "0") {
 
     var a_number = s_number.split("");
-    min = a_number.sort().join("");
-    max = a_number.sort().reverse().join("");
+    var point_index = a_number.findIndex((element) => element == '.');
+    a_number.splice(point_index, 1);
     
-    return String(Number(max) - Number(min));
+    min = a_number.slice().sort();
+    min.splice(point_index, 0, '.');
+    max = a_number.slice().sort().reverse();
+    max.splice(point_index, 0, '.');
+
+    return String(Number(max.join('')) - Number(min.join('')));
 }

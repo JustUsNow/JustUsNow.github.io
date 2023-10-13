@@ -17,6 +17,9 @@ function lab7_onClick_calculate() {
 
 function lab7_calculate(number1 = 0, number2 = 0, operation = "+") {
 
+    var reg = /^[+-]?([0-9]*[.])?[0-9]+$/;
+    if (!reg.test(number1) || !reg.test(number2)) return 'Input not validated';
+
     number1 = Number(number1);
     number2 = Number(number2);
     
