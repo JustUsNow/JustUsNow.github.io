@@ -1,0 +1,48 @@
+{
+    "siteTitle": "TvPr SPA",
+    "mainPage": "main",
+    "pages": {
+        "main": {
+            "inSitemap": true,
+            "title": "Главная",
+            "menu": "main",
+            "updated": "2021-12-22"
+        },
+        "about": {
+            "inSitemap": true,
+            "title": "О проекте",
+            "menu": "about",
+            "updated": "2021-12-22"
+        },
+        "intro": {
+            "inSitemap": true,
+            "title": "Вступление",
+            "menu": "game/intro",
+            "updated": "2021-12-22"
+        },
+        "matrix": {
+            "inSitemap": true,
+            "title": "Матрица выигрышей",
+            "menu": "game/matrix",
+            "updated": "2021-12-22"
+        },
+        "behaviours": {
+            "inSitemap": true,
+            "title": "Стратегии",
+            "menu": "game/behaviours",
+            "updated": "2021-12-22"
+        },
+        "burn": {
+            "inSitemap": true,
+            "title": "Сжигание денег",
+            "menu": "game/burn",
+            "updated": "2021-12-22"
+        },
+        "conclusion": {
+            "inSitemap": true,
+            "title": "Заключение",
+            "menu": "game/conclusion",
+            "updated": "2021-12-22"
+        }
+    }
+}

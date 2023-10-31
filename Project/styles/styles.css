@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family:'Courier New', Courier, monospace;
+    height: 100vh;
+}
+
+ /* Боковое меню навигации */
+ .sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+}
+
+.slide-menu {
+    list-style: none;
+    padding-left: 0;
+}
+  
+  /* Пункты меню */
+.sidenav a {
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: white;
+    padding: 1rem 1rem 1rem 2rem;
+    text-decoration: none;
+    display: block;
+}
+
+.sidenav a.active {
+    background-color: #ddd;
+    color: black;
+}
+  
+  /* Изменение цвета кнопки при наведении */
+.sidenav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.inner-menu a {
+    font-weight: 100;
+    font-size: 1rem;
+    padding: .75rem .75rem .75rem 2.5rem;
+}
+  
+  /* Отступ для основной части */
+.content-wrapper {
+    font-size: 1.5rem;
+    height: 100%;
+    margin-left: 200px;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.table-wrapper {
+    text-align: center;
+    padding: 1rem;
+}
+.matrix {
+    border-collapse: collapse;
+    font-size: 2rem; 
+    display: inline-block;
+}
+
+.matrix th {
+    padding: 0.5rem;
+}
+
+.button-wrapper {
+    text-align: center;
+}
+
+.button-wrapper #main-page {
+    text-align: left;
+}
+
+.go-button {
+    text-align: center;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: black;
+    border: none;
+
+}
+  
+.go-button:hover {background-color: rgb(201, 201, 201)}
+
+
+#main-title {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+
+#sub-title {
+    padding-bottom: 1rem;
+}
+
+.credits {
+    padding-bottom: 1rem;
+}
+
+.title {
+    font-style: bold;
+    padding-bottom: 1.5rem;
+}
+
+.text {
+    text-align: justify;
+}
+
+.tables-wrapper {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+#goodbye {
+    font-size: 4rem;
+    font-weight: 900;
+}

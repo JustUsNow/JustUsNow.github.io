@@ -1,31 +1,40 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Придумать название</title>
+<head>
+    <title>Придумать название</title>
         <meta charset='utf-8' />
         <meta name='description' content='This is a simple visualization of one of the problems in Game Theory called Battle of Sexes' />
         <meta name='author' content='Stepnov Egor' />
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel='stylesheet' href='css/styles.css' />
-    </head>
-    <body>
-            <nav class="sidenav">
-                <ul>
-                    <li><a href='#home'>Home</a></li>
-                    <li><a href='#intro'>Intro</a></li>
-                    <li><a href='#about'>About</a></li>
-                </ul>
-            </nav>
-            <main class = "content" id="root">
-                
-            </main>
-            <footer>
+        <link rel='stylesheet' href='styles/styles.css' />
+</head>
+<body>
+    <nav class='sidenav' id='menu'>
+        <h2 class='page-title' id='page-title'>Тест</h2>
+        <ui class='slide-menu'>
+            <a href='main' data-menu='main' data-link='ajax'>Главная</a>
+            <a href='intro' data-menu='game' data-link='ajax'>Битва полов</a>
+            <div class='inner-menu' id='inner-menu'>
+                <a href='intro' data-menu='game/intro' data-link='ajax'>Вступление</a>
+                <a href='matrix' data-menu='game/matrix' data-link='ajax'>Матрица</a>
+                <a href='behaviours' data-menu='game/behaviours' data-link='ajax'>Стратегии</a>
+                <a href='burn' data-menu='game/burn' data-link='ajax'>Сжигание денег</a>
+                <a href='conclusion' data-menu='game/conclusion' data-link='ajax'>Заключение</a>
+            </div>
+            <a href='about' data-menu='about' data-link='ajax'>О проекте</a>
+        </ui>
+        
+    </nav>
+    <div class='content-wrapper' id='content-1'>
+        
+    </div>
+    <div class='content-wrapper' id='content-2'>
+        
+    </div>
+    <footer>
 
-            </footer>
-    </body>
-
-    <script src='js/button.js'></script>
-    <script src='js/Route.js'></script>
-    <script src='js/Router.js'></script>
-    <script src='js/app.js'></script>
+    </footer>
+    <script src='js/jquery-3.6.0.js'></script>
+    <script src='js/main.js'></script>
+</body>
 </html>
